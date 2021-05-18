@@ -18,5 +18,8 @@
     <ClCompile Include="1ove.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Program Files\glad\src\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

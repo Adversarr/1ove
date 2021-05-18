@@ -73,7 +73,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <LibraryPath>D:\Program Files\glfw-3.3.4.bin.WIN32\lib-vc2019;$(LibraryPath)</LibraryPath>
-    <IncludePath>D:\Program Files\glad\include;D:\Program Files\glfw-3.3.4.bin.WIN32\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Program Files\glad\include;D:\Program Files\glm-0.9.9.8\glm;D:\Program Files\glfw-3.3.4.bin.WIN32\include;$(IncludePath)</IncludePath>
     <SourcePath>D:\Program Files\glad\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

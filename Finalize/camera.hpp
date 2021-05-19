@@ -14,7 +14,7 @@
 class Camera
 {
 private:
-	glm::vec3 position  = glm::vec3(.0f, .0f, 5.0f);
+	glm::vec3 position  = glm::vec3(-2.0f, 2.0f, 4.0f);
 	glm::vec3 direction = glm::vec3(.0f, .0f, -1.f);
 	glm::vec3 up;
 	glm::vec3 right;
@@ -38,15 +38,14 @@ private:
 		direction = glm::normalize(front);
 		right = glm::normalize(glm::cross(front, worldUp));
 		up = glm::normalize(glm::cross(right, front));
-		std::cout << position[0] << "\t" << position[1] << "\t" << position[2] << std::endl;
 	}
 
 public:
 
 	Camera() {
 		up = worldUp;
-		yaw = -90.0f;
-		pitch = 0.0f;
+		yaw = -60.0f;
+		pitch = -20.0f;
 		update();
 	}
 
@@ -96,6 +95,10 @@ public:
 		}
 		if (upd)
 			update();
+	}
+
+	const glm::vec3& getPosition() const {
+		return position;
 	}
 
 };

@@ -5,6 +5,17 @@
 #include <glm.hpp>
 #include <gtc/type_ptr.hpp>
 #include <gtc/matrix_transform.hpp>
+#define PI 3.1415926f
+#define R 5.f
+#define TO_0_PI(x) ((float) x / 29.0f * PI)
+#define RATE .9999f
+inline float func(float x, float y, float z)
+{
+	float x2 = x * x, y2 = 2.25f * y * y, z2 = z * z;
+	float t = (x2 + y2 + z2 - 1);
+	t = t * t * t;
+	return t - (x2 + 0.025f * y2) * z2 * z;
+}
 
 
 const char* vertexShaderSource =

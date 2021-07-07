@@ -17,10 +17,11 @@ constexpr float pi = glm::pi<float>();
 
 inline float func(float x, float y, float z)
 {
-	float x2 = x * x, y2 = 2.25f * y * y, z2 = z * z;
-	float t = (x2 + y2 + z2 - 1);
-	t = t * t * t;
-	return t - (x2 + 0.025f * y2) * z2 * z;
+// 	float x2 = x * x, y2 = 2.25f * y * y, z2 = z * z;
+// 	float t = (x2 + y2 + z2 - 1);
+// 	t = t * t * t;
+// 	return t - (x2 + 0.025f * y2) * z2 * z;
+	return x * x + y * y + z * z - 1;
 }
 
 inline float gradx(float x, float y, float z)
